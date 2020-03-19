@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F44336"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#8BC34A"
+        android:backgroundTint="#8BC34A"
+        android:text="Dreams Quiz App"
+        android:textColor="@android:color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_start_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="#FFEB3B"
+        android:text="Highscore: 0"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#3F51B5"
+        android:text="Start Quiz" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="124dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/button_start_quiz"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_alignLeft="@+id/button_start_quiz"
+        android:layout_marginTop="16dp"
+        android:background="#009688" />
+
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="132dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/spinner_category"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_alignLeft="@+id/button_start_quiz"
+        android:layout_marginTop="16dp"
+        android:background="#03A9F4"
+        tools:ignore="UnknownId" />
+
+
+</RelativeLayout>
